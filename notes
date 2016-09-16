@@ -1,0 +1,6 @@
+- need to demonstrate how to attach this provisioning examples to existing roles/playbooks
+  - try with the first two
+
+- No space between quotes and variables.
+   - "{{ security_group }}" ok
+   - "{{ security_group }} " error

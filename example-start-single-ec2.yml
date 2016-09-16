@@ -1,0 +1,40 @@
+- name: create a test instance
+  hosts: localhost
+  gather_facts: False
+  tasks:
+  - name: Create security group
+    ec2_group:
+      name: security-group-test
+      description: "A Security group"
+      region: us-east-1
+      vpc_id: vpc-e6c17c83
+      rules:
+        - proto: tcp
+          from_port: 22
+          to_port: 22
+          cidr_ip: 0.0.0.0/0
+      rules_egress:
+        - proto: all
+          cidr_ip: 0.0.0.0/0
+#          group_name: example-secgroup
+          group_desc: example of ec2 secgroup
+    register: secgroup_first
+  - name: ec2 launch test
+    ec2:
+            key_name: hrlee
+            instance_type: t2.micro
+            image: ami-2d39803a
+            wait: yes # or true?
+            region: us-east-1
+            count: 1
+#            group:  [ 'default', 'security-group-test' ] # "{{secgroup_first.name}}" ]
+            group_id: "{{secgroup_first.group_id}}"
+            vpc_subnet_id: subnet-719a774d
+            assign_public_ip: yes
+    register: first_vm
+  - name: Add new instance to host group
+    add_host: hostname={{ item.public_ip }} groupname=launched
+    with_items: '{{first_vm.instances}}'
+  - name: Wait for SSH to come up
+    wait_for: host={{ item.public_ip }} port=22 delay=60 timeout=320 state=started
+    with_items: '{{first_vm.instances}}'

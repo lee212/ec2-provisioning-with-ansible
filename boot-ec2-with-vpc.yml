@@ -1,0 +1,76 @@
+- name: create a test instance
+  hosts: localhost
+  gather_facts: False
+  vars:
+    keypair: hrlee
+    security_group: bds_secgroup
+    image: ami-2d39803a # Ubuntu 14.04
+    region: us-east-1
+    vpcid: vpc-e6c17c83
+    subnet: subnet-719a774d
+  tasks:
+  - name: Create security group
+    ec2_group:
+      name: "{{ security_group }}"
+      description: "Security group for Big Data Stacks"
+      region: "{{ region }}"
+      vpc_id: "{{ vpcid }}"
+      rules:
+        - proto: tcp
+          from_port: 22
+          to_port: 22
+          cidr_ip: 0.0.0.0/0
+      rules_egress:
+        - proto: all
+          cidr_ip: 0.0.0.0/0
+#          group_name: example-secgroup
+          group_desc: ec2 secgroup for bds
+  - name: bds-vc node first two
+    ec2:
+      key_name: "{{ keypair }}"
+      instance_type: t2.micro
+      image: "{{ image }}"
+      wait: yes # or true?
+      region: "{{ region }}"
+      exact_count: 2
+      count_tag: bds-first-two
+      group:  [ 'default', "{{ security_group }}" ] 
+      instance_tags: 
+        namenodes: True
+        resourcemanagernodes: True
+        datanodes: True
+        zookeepernodes: True
+        hadoopnodes: True
+        journalnodes: True
+        historyservernodes: False
+        frontendnodes: False
+      vpc_subnet_id: "{{ subnet }}"
+      assign_public_ip: yes
+    register: node_first_two
+  - name: bds-vc node last
+    ec2:
+      key_name: "{{ keypair }}"
+      instance_type: t2.micro
+      image: "{{ image }}"
+      wait: yes # or true?
+      region: "{{ region }}"
+      exact_count: 1
+      count_tag: bds-last-one
+      group:  [ 'default', "{{ security_group }}" ] 
+      instance_tags: 
+        namenodes: True
+        resourcemanagernodes: True
+        datanodes: True
+        zookeepernodes: True
+        hadoopnodes: True
+        journalnodes: True
+        historyservernodes: True
+        frontendnodes: True
+      vpc_subnet_id: "{{ subnet }}"
+      assign_public_ip: yes
+    register: node_last_one
+  - name: Wait for SSH to come up
+    wait_for: host={{ item.public_ip }} port=22 delay=60 timeout=320 state=started
+    with_items: 
+      - '{{node_first_two.instances}}'
+      - '{{node_last_one.instances}}'

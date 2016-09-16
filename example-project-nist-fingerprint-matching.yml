@@ -1,0 +1,11 @@
+---
+
+- name: example-project-nist-fingerprint-matching
+  tasks:
+    - git: 
+      repo=git@github.com:cloudmesh/example-project-nist-fingerprint-matching.git
+      dest=example-project-nist-fingerprint-matching
+      recursive=yes
+
+
+- include: example-project-nist-fingerprint-matching/big-data-stack/play-hadoop.yml

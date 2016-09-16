@@ -1,0 +1,52 @@
+---
+
+- name: convert EC2 tags_*_True inventory groups
+  hosts: "tag_hadoopnodes_True"
+  #remote_user: ubuntu
+  tasks:
+
+    - name: Add new instance to host group (hadoopnodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=hadoopnodes
+      with_items: "{{ groups['tag_hadoopnodes_True'] }}"
+
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_zookeepernodes_True"
+  tasks:
+    - name: Add new instance to host group (zookeepernodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=zookeepernodes
+      with_items: "{{ groups['tag_zookeepernodes_True'] }}"
+      
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_datanodes_True"
+  tasks:
+    - name: Add new instance to host group (datanodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=datanodes
+      with_items: "{{ groups['tag_datanodes_True'] }}"
+
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_journalnodes_True"
+  tasks:
+    - name: Add new instance to host group (journalnodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=journalnodes
+      with_items: "{{ groups['tag_journalnodes_True'] }}"
+
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_resourcemanagernodes_True"
+  tasks:
+    - name: Add new instance to host group (resourcemanagernodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=resourcemanagernodes
+      with_items: "{{ groups['tag_resourcemanagernodes_True'] }}"
+
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_frontendnodes_True"
+  tasks:
+    - name: Add new instance to host group (frontendnodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=frontendnodes
+      with_items: "{{ groups['tag_frontendnodes_True'] }}"
+
+- name:  convert EC2 tags_*_True inventory groups
+  hosts: "tag_historyservernodes_True"
+  tasks:
+    - name: Add new instance to host group (historyservernodes)
+      add_host: hostname="{{ hostvars[item]['ec2_ip_address'] }}" groupname=historyservernodes
+      with_items: "{{ groups['tag_historyservernodes_True'] }}"
