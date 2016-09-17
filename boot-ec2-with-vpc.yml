@@ -8,6 +8,8 @@
     region: us-east-1
     vpcid: vpc-e6c17c83
     subnet: subnet-719a774d
+    facts_dir: "{{ playbook_dir }}/facts"
+    facts_file: "{{ facts_dir }}/ec2.yml"
   tasks:
   - name: Create security group
     ec2_group:
@@ -74,3 +76,7 @@
     with_items: 
       - '{{node_first_two.instances}}'
       - '{{node_last_one.instances}}'
+  - name: create a directory for variable file
+    file: path={{ facts_dir }} state=directory mode=755
+  - name: create a variable file to store instance information 
+    copy: content="{{ node_first_two.instances|to_nice_yaml }}\n{{ node_last_one.instances|to_nice_yaml }}" dest="{{ facts_file }}"

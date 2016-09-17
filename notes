@@ -4,3 +4,8 @@
 - No space between quotes and variables.
    - "{{ security_group }}" ok
    - "{{ security_group }} " error
+
+- reading yaml by include_vars may require ansible 2.2+
+  - pip install -U git+https://github.com/ansible/ansible
+  - as of 09/16/2016 pypi provides 2.1.1, get ansible from git repo (2.2.0 0.0.devel)
+
