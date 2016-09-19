@@ -4,6 +4,7 @@
   vars:
     keypair: hrlee
     security_group: bds_secgroup
+    instance_size: t2.micro
     image: ami-2d39803a # Ubuntu 14.04
     region: us-east-1
     vpcid: vpc-e6c17c83
@@ -30,7 +31,7 @@
   - name: bds-vc node first two
     ec2:
       key_name: "{{ keypair }}"
-      instance_type: t2.micro
+      instance_type: "{{ instance_size }}"
       image: "{{ image }}"
       wait: yes # or true?
       region: "{{ region }}"
@@ -52,7 +53,7 @@
   - name: bds-vc node last
     ec2:
       key_name: "{{ keypair }}"
-      instance_type: t2.micro
+      instance_type: "{{ instance_size }}"
       image: "{{ image }}"
       wait: yes # or true?
       region: "{{ region }}"
