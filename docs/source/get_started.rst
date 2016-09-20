@@ -90,12 +90,12 @@ as long as ``ec2.py`` script provides dynamic inventory.
 
 - Check running EC2 instances, (wait a few seconds)::
 
-  $ ./ec2.py
-   {
-     "_meta": {
-       "hostvars": {}
-     }
-   }
+          $ ./ec2.py
+           {
+             "_meta": {
+               "hostvars": {}
+             }
+           }
 
 There is no running instances now but if you have some, the JSON return dataset
 looks like:
