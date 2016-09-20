@@ -203,7 +203,7 @@ Terminating EC2 Instances
 reads the YAML fact file and gets instance ids to terminate. ``include_vars``
 imports data from YAML and makes them accessible in Ansible Plays.
 
-Sample ec2_fact file looks like:
+Sample ec2_fact file looks like::
 
 .. include:: ec2_facts_for_vars.txt
 
