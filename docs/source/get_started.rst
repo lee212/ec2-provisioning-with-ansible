@@ -34,17 +34,17 @@ environment variables but we will use environment variables with
 - Be ready with your ``AWS_ACCESS_KEY`` and ``AWS_SECRET_ACCESS_KEY``
 - Store the information in a file like::
 
-  $ nano cred
-    export AWS_ACCESS_KEY=1234567890
-    export AWS_SECRET_ACCESS_KEY=1234567890
+          $ nano cred
+            export AWS_ACCESS_KEY=1234567890
+            export AWS_SECRET_ACCESS_KEY=1234567890
 
 (Replace ``1234567890`` with a real value)
 
 - Encrypt the file with ``ansible-vault`` with your password for this file::
 
-  $ ansible-vault encrypt cred
-  New Vault password:
-  Confirm New Vault password:
+          $ ansible-vault encrypt cred
+          New Vault password:
+          Confirm New Vault password:
 
 The encrypted file looks like::
 
@@ -60,9 +60,9 @@ The encrypted file looks like::
 
 - Enable your EC2 credentials in a shell by::
 
-  $ $(ansible-vault view cred)
-  Vault password:
-  $
+          $ $(ansible-vault view cred)
+          Vault password:
+          $
 
 You can confirm whether it's loaded or not by::
 
@@ -159,7 +159,7 @@ and zookeepernodes like::
         historyservernodes: False
         frontendnodes: False
 
-The ``key:value`` tags are used here and the AWS EC2 returns JSON data like::
+The ``key:value`` tags are used here and the AWS EC2 returns JSON data like:
 
 .. include:: ec2-instance-metadata-example.txt
 
@@ -205,6 +205,6 @@ imports data from YAML and makes them accessible in Ansible Plays.
 
 Sample ec2_fact file looks like:
 
-  .. include:: ec2_facts_for_vars.txt
+.. include:: ec2_facts_for_vars.txt
 
 
