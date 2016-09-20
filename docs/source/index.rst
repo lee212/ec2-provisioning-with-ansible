@@ -16,10 +16,11 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   get_started.rst
-   aws_deploy.rst
-   ec2.rst
-   facts.rst
+
+   get_started
+   aws_deploy
+   ec2
+   facts
 
 
 
