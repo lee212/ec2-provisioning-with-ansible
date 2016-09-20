@@ -78,11 +78,11 @@ as long as ``ec2.py`` script provides dynamic inventory.
 
 - Download and run ``ec2.py`` AWS External Inventory Script::
 
-  $ curl -L https://raw.github.com/ansible/ansible/devel/contrib/inventory/ec2.py > ec2.py
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-  100 63776  100 63776    0     0   135k      0 --:--:-- --:--:-- --:--:--  317k
+          $ curl -L https://raw.github.com/ansible/ansible/devel/contrib/inventory/ec2.py > ec2.py
+          % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+          Dload  Upload   Total   Spent    Left  Speed
+          0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+          100 63776  100 63776    0     0   135k      0 --:--:-- --:--:-- --:--:--  317k
 
 - Make it executable by::
 
