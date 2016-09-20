@@ -1,116 +1,116 @@
-{
-  "_meta": {
-    "hostvars": {
-      "54.85.130.171": {
-        "ansible_ssh_host": "54.85.130.171",
-        "ec2__in_monitoring_element": false,
-        "ec2_ami_launch_index": "0",
-        "ec2_architecture": "x86_64",
-        "ec2_client_token": "",
-        "ec2_dns_name": "",
-        "ec2_ebs_optimized": false,
-        "ec2_eventsSet": "",
-        "ec2_group_name": "",
-        "ec2_hypervisor": "xen",
-        "ec2_id": "i-1a2c68e2",
-        "ec2_image_id": "ami-2d39803a",
-        "ec2_instance_profile": "",
-        "ec2_instance_type": "t2.micro",
-        "ec2_ip_address": "54.85.130.171",
-        "ec2_item": "",
-        "ec2_kernel": "",
-        "ec2_key_name": "albert",
-        "ec2_launch_time": "2016-09-15T17:18:36.000Z",
-        "ec2_monitored": false,
-        "ec2_monitoring": "",
-        "ec2_monitoring_state": "disabled",
-        "ec2_persistent": false,
-        "ec2_placement": "us-east-1a",
-        "ec2_platform": "",
-        "ec2_previous_state": "",
-        "ec2_previous_state_code": 0,
-        "ec2_private_dns_name": "ip-172-30-3-104.ec2.internal",
-        "ec2_private_ip_address": "172.30.3.104",
-        "ec2_public_dns_name": "",
-        "ec2_ramdisk": "",
-        "ec2_reason": "",
-        "ec2_region": "us-east-1",
-        "ec2_requester_id": "",
-        "ec2_root_device_name": "/dev/sda1",
-        "ec2_root_device_type": "ebs",
-        "ec2_security_group_ids": "sg-69ebc60c,sg-115b376b",
-        "ec2_security_group_names": "default,bds_secgroup",
-        "ec2_sourceDestCheck": "true",
-        "ec2_spot_instance_request_id": "",
-        "ec2_state": "running",
-        "ec2_state_code": 16,
-        "ec2_state_reason": "",
-        "ec2_subnet_id": "subnet-719a774d",
-        "ec2_tag_datanodes": "True",
-        "ec2_tag_frontendnodes": "False",
-        "ec2_tag_hadoopnodes": "True",
-        "ec2_tag_historyservernodes": "False",
-        "ec2_tag_journalnodes": "True",
-        "ec2_tag_namenodes": "True",
-        "ec2_tag_resourcemanagernodes": "True",
-        "ec2_tag_zookeepernodes": "True",
-        "ec2_virtualization_type": "hvm",
-        "ec2_vpc_id": "vpc-e6c17c83"
-      }
-    }
-  },
-  "ami_2d39803a": [
-    "54.85.130.171"
-  ],
-  "ec2": [
-    "54.85.130.171"
-  ],
-  "i-1a2c68e2": [
-    "54.85.130.171"
-  ],
-  "key_albert": [
-    "54.85.130.171"
-  ],
-  "security_group_bds_secgroup": [
-    "54.85.130.171"
-  ],
-  "security_group_default": [
-    "54.85.130.171"
-  ],
-  "tag_datanodes_True": [
-    "54.85.130.171"
-  ],
-  "tag_frontendnodes_False": [
-    "54.85.130.171"
-  ],
-  "tag_hadoopnodes_True": [
-    "54.85.130.171"
-  ],
-  "tag_historyservernodes_False": [
-    "54.85.130.171"
-  ],
-  "tag_journalnodes_True": [
-    "54.85.130.171"
-  ],
-  "tag_namenodes_True": [
-    "54.85.130.171"
-  ],
-  "tag_resourcemanagernodes_True": [
-    "54.85.130.171"
-  ],
-  "tag_zookeepernodes_True": [
-    "54.85.130.171"
-  ],
-  "type_t2_micro": [
-    "54.85.130.171"
-  ],
-  "us-east-1": [
-    "54.85.130.171"
-  ],
-  "us-east-1a": [
-    "54.85.130.171"
-  ],
-  "vpc_id_vpc_e6c17c83": [
-    "54.85.130.171"
-  ]
-}
+	{
+	  "_meta": {
+	    "hostvars": {
+	      "54.85.130.171": {
+		"ansible_ssh_host": "54.85.130.171",
+		"ec2__in_monitoring_element": false,
+		"ec2_ami_launch_index": "0",
+		"ec2_architecture": "x86_64",
+		"ec2_client_token": "",
+		"ec2_dns_name": "",
+		"ec2_ebs_optimized": false,
+		"ec2_eventsSet": "",
+		"ec2_group_name": "",
+		"ec2_hypervisor": "xen",
+		"ec2_id": "i-1a2c68e2",
+		"ec2_image_id": "ami-2d39803a",
+		"ec2_instance_profile": "",
+		"ec2_instance_type": "t2.micro",
+		"ec2_ip_address": "54.85.130.171",
+		"ec2_item": "",
+		"ec2_kernel": "",
+		"ec2_key_name": "albert",
+		"ec2_launch_time": "2016-09-15T17:18:36.000Z",
+		"ec2_monitored": false,
+		"ec2_monitoring": "",
+		"ec2_monitoring_state": "disabled",
+		"ec2_persistent": false,
+		"ec2_placement": "us-east-1a",
+		"ec2_platform": "",
+		"ec2_previous_state": "",
+		"ec2_previous_state_code": 0,
+		"ec2_private_dns_name": "ip-172-30-3-104.ec2.internal",
+		"ec2_private_ip_address": "172.30.3.104",
+		"ec2_public_dns_name": "",
+		"ec2_ramdisk": "",
+		"ec2_reason": "",
+		"ec2_region": "us-east-1",
+		"ec2_requester_id": "",
+		"ec2_root_device_name": "/dev/sda1",
+		"ec2_root_device_type": "ebs",
+		"ec2_security_group_ids": "sg-69ebc60c,sg-115b376b",
+		"ec2_security_group_names": "default,bds_secgroup",
+		"ec2_sourceDestCheck": "true",
+		"ec2_spot_instance_request_id": "",
+		"ec2_state": "running",
+		"ec2_state_code": 16,
+		"ec2_state_reason": "",
+		"ec2_subnet_id": "subnet-719a774d",
+		"ec2_tag_datanodes": "True",
+		"ec2_tag_frontendnodes": "False",
+		"ec2_tag_hadoopnodes": "True",
+		"ec2_tag_historyservernodes": "False",
+		"ec2_tag_journalnodes": "True",
+		"ec2_tag_namenodes": "True",
+		"ec2_tag_resourcemanagernodes": "True",
+		"ec2_tag_zookeepernodes": "True",
+		"ec2_virtualization_type": "hvm",
+		"ec2_vpc_id": "vpc-e6c17c83"
+	      }
+	    }
+	  },
+	  "ami_2d39803a": [
+	    "54.85.130.171"
+	  ],
+	  "ec2": [
+	    "54.85.130.171"
+	  ],
+	  "i-1a2c68e2": [
+	    "54.85.130.171"
+	  ],
+	  "key_albert": [
+	    "54.85.130.171"
+	  ],
+	  "security_group_bds_secgroup": [
+	    "54.85.130.171"
+	  ],
+	  "security_group_default": [
+	    "54.85.130.171"
+	  ],
+	  "tag_datanodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "tag_frontendnodes_False": [
+	    "54.85.130.171"
+	  ],
+	  "tag_hadoopnodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "tag_historyservernodes_False": [
+	    "54.85.130.171"
+	  ],
+	  "tag_journalnodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "tag_namenodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "tag_resourcemanagernodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "tag_zookeepernodes_True": [
+	    "54.85.130.171"
+	  ],
+	  "type_t2_micro": [
+	    "54.85.130.171"
+	  ],
+	  "us-east-1": [
+	    "54.85.130.171"
+	  ],
+	  "us-east-1a": [
+	    "54.85.130.171"
+	  ],
+	  "vpc_id_vpc_e6c17c83": [
+	    "54.85.130.171"
+	  ]
+	}

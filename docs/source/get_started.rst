@@ -91,16 +91,16 @@ as long as ``ec2.py`` script provides dynamic inventory.
 - Check running EC2 instances, (wait a few seconds)::
 
   $ ./ec2.py
-  {
-    "_meta": {
-      "hostvars": {}
-    }
-  }
+   {
+     "_meta": {
+       "hostvars": {}
+     }
+   }
 
 There is no running instances now but if you have some, the JSON return dataset
 looks like:
 
-.. include:: ec2-py-sample.txt
+  .. include:: ec2-py-sample.txt
 
 
 - Switch inventory argument option in your ``ansible-playbook`` command like::
@@ -205,6 +205,6 @@ imports data from YAML and makes them accessible in Ansible Plays.
 
 Sample ec2_fact file looks like:
 
-.. include:: ec2_facts_for_vars.txt
+  .. include:: ec2_facts_for_vars.txt
 
 
