@@ -100,7 +100,7 @@ as long as ``ec2.py`` script provides dynamic inventory.
 There is no running instances now but if you have some, the JSON return dataset
 looks like:
 
-  .. include:: ec2-py-sample.txt
+  .. literalinclude:: ec2-py-sample.txt
 
 
 - Switch inventory argument option in your ``ansible-playbook`` command like::
@@ -161,7 +161,7 @@ and zookeepernodes like::
 
 The ``key:value`` tags are used here and the AWS EC2 returns JSON data like:
 
-.. include:: ec2-instance-metadata-example.txt
+.. literalinclude:: ec2-instance-metadata-example.txt
 
 As you noticed that tags create separate host groups in a ``tag_<key>_<value>``
 form, for example, namenodes are listed like::
@@ -205,6 +205,5 @@ imports data from YAML and makes them accessible in Ansible Plays.
 
 Sample ec2_fact file looks like:
 
-.. include:: ec2_facts_for_vars.txt
 .. literalinclude:: ec2_facts_for_vars.txt
 

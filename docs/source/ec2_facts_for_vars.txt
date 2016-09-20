@@ -1,208 +1,208 @@
-	    "ansible_facts": {
-		"changed": true,
-		"instance_ids": [
-		    "i-8c064074",
-		    "i-8306407b"
-		],
-		"instances": [
-		    {
-			"ami_launch_index": "0",
-			"architecture": "x86_64",
-			"block_device_mapping": {
-			    "/dev/sda1": {
-				"delete_on_termination": true,
-				"status": "attached",
-				"volume_id": "vol-71970cf0"
-			    }
-			},
-			"dns_name": "",
-			"ebs_optimized": false,
-			"groups": {
-			    "sg-115b376b": "bds_secgroup",
-			    "sg-69ebc60c": "default"
-			},
-			"hypervisor": "xen",
-			"id": "i-8c064074",
-			"image_id": "ami-2d39803a",
-			"instance_type": "t2.micro",
-			"kernel": null,
-			"key_name": "albert",
-			"launch_time": "2016-09-17T03:14:11.000Z",
-			"placement": "us-east-1a",
-			"private_dns_name": "ip-172-30-3-89.ec2.internal",
-			"private_ip": "172.30.3.89",
-			"public_dns_name": "",
-			"public_ip": "54.159.24.94",
-			"ramdisk": null,
-			"region": "us-east-1",
-			"root_device_name": "/dev/sda1",
-			"root_device_type": "ebs",
-			"state": "running",
-			"state_code": 16,
-			"tags": {
-			    "datanodes": "True",
-			    "frontendnodes": "False",
-			    "hadoopnodes": "True",
-			    "historyservernodes": "False",
-			    "journalnodes": "True",
-			    "namenodes": "True",
-			    "resourcemanagernodes": "True",
-			    "zookeepernodes": "True"
-			},
-			"tenancy": "default",
-			"virtualization_type": "hvm"
-		    },
-		    {
-			"ami_launch_index": "1",
-			"architecture": "x86_64",
-			"block_device_mapping": {
-			    "/dev/sda1": {
-				"delete_on_termination": true,
-				"status": "attached",
-				"volume_id": "vol-c4960d45"
-			    }
-			},
-			"dns_name": "",
-			"ebs_optimized": false,
-			"groups": {
-			    "sg-115b376b": "bds_secgroup",
-			    "sg-69ebc60c": "default"
-			},
-			"hypervisor": "xen",
-			"id": "i-8306407b",
-			"image_id": "ami-2d39803a",
-			"instance_type": "t2.micro",
-			"kernel": null,
-			"key_name": "albert",
-			"launch_time": "2016-09-17T03:14:11.000Z",
-			"placement": "us-east-1a",
-			"private_dns_name": "ip-172-30-3-88.ec2.internal",
-			"private_ip": "172.30.3.88",
-			"public_dns_name": "",
-			"public_ip": "54.175.124.32",
-			"ramdisk": null,
-			"region": "us-east-1",
-			"root_device_name": "/dev/sda1",
-			"root_device_type": "ebs",
-			"state": "running",
-			"state_code": 16,
-			"tags": {
-			    "datanodes": "True",
-			    "frontendnodes": "False",
-			    "hadoopnodes": "True",
-			    "historyservernodes": "False",
-			    "journalnodes": "True",
-			    "namenodes": "True",
-			    "resourcemanagernodes": "True",
-			    "zookeepernodes": "True"
-			},
-			"tenancy": "default",
-			"virtualization_type": "hvm"
+    "ansible_facts": {
+	"changed": true,
+	"instance_ids": [
+	    "i-8c064074",
+	    "i-8306407b"
+	],
+	"instances": [
+	    {
+		"ami_launch_index": "0",
+		"architecture": "x86_64",
+		"block_device_mapping": {
+		    "/dev/sda1": {
+			"delete_on_termination": true,
+			"status": "attached",
+			"volume_id": "vol-71970cf0"
 		    }
-		],
-		"tagged_instances": [
-		    {
-			"ami_launch_index": "0",
-			"architecture": "x86_64",
-			"block_device_mapping": {
-			    "/dev/sda1": {
-				"delete_on_termination": true,
-				"status": "attached",
-				"volume_id": "vol-71970cf0"
-			    }
-			},
-			"dns_name": "",
-			"ebs_optimized": false,
-			"groups": {
-			    "sg-115b376b": "bds_secgroup",
-			    "sg-69ebc60c": "default"
-			},
-			"hypervisor": "xen",
-			"id": "i-8c064074",
-			"image_id": "ami-2d39803a",
-			"instance_type": "t2.micro",
-			"kernel": null,
-			"key_name": "albert",
-			"launch_time": "2016-09-17T03:14:11.000Z",
-			"placement": "us-east-1a",
-			"private_dns_name": "ip-172-30-3-89.ec2.internal",
-			"private_ip": "172.30.3.89",
-			"public_dns_name": "",
-			"public_ip": "54.159.24.94",
-			"ramdisk": null,
-			"region": "us-east-1",
-			"root_device_name": "/dev/sda1",
-			"root_device_type": "ebs",
-			"state": "running",
-			"state_code": 16,
-			"tags": {
-			    "datanodes": "True",
-			    "frontendnodes": "False",
-			    "hadoopnodes": "True",
-			    "historyservernodes": "False",
-			    "journalnodes": "True",
-			    "namenodes": "True",
-			    "resourcemanagernodes": "True",
-			    "zookeepernodes": "True"
-			},
-			"tenancy": "default",
-			"virtualization_type": "hvm"
-		    },
-		    {
-			"ami_launch_index": "1",
-			"architecture": "x86_64",
-			"block_device_mapping": {
-			    "/dev/sda1": {
-				"delete_on_termination": true,
-				"status": "attached",
-				"volume_id": "vol-c4960d45"
-			    }
-			},
-			"dns_name": "",
-			"ebs_optimized": false,
-			"groups": {
-			    "sg-115b376b": "bds_secgroup",
-			    "sg-69ebc60c": "default"
-			},
-			"hypervisor": "xen",
-			"id": "i-8306407b",
-			"image_id": "ami-2d39803a",
-			"instance_type": "t2.micro",
-			"kernel": null,
-			"key_name": "albert",
-			"launch_time": "2016-09-17T03:14:11.000Z",
-			"placement": "us-east-1a",
-			"private_dns_name": "ip-172-30-3-88.ec2.internal",
-			"private_ip": "172.30.3.88",
-			"public_dns_name": "",
-			"public_ip": "54.175.124.32",
-			"ramdisk": null,
-			"region": "us-east-1",
-			"root_device_name": "/dev/sda1",
-			"root_device_type": "ebs",
-			"state": "running",
-			"state_code": 16,
-			"tags": {
-			    "datanodes": "True",
-			    "frontendnodes": "False",
-			    "hadoopnodes": "True",
-			    "historyservernodes": "False",
-			    "journalnodes": "True",
-			    "namenodes": "True",
-			    "resourcemanagernodes": "True",
-			    "zookeepernodes": "True"
-			},
-			"tenancy": "default",
-			"virtualization_type": "hvm"
-		    }
-		]
-	    },
-	    "changed": false,
-	    "invocation": {
-		"module_args": {
-		    "file": "/tmp/a.yml"
 		},
-		"module_name": "include_vars"
+		"dns_name": "",
+		"ebs_optimized": false,
+		"groups": {
+		    "sg-115b376b": "bds_secgroup",
+		    "sg-69ebc60c": "default"
+		},
+		"hypervisor": "xen",
+		"id": "i-8c064074",
+		"image_id": "ami-2d39803a",
+		"instance_type": "t2.micro",
+		"kernel": null,
+		"key_name": "albert",
+		"launch_time": "2016-09-17T03:14:11.000Z",
+		"placement": "us-east-1a",
+		"private_dns_name": "ip-172-30-3-89.ec2.internal",
+		"private_ip": "172.30.3.89",
+		"public_dns_name": "",
+		"public_ip": "54.159.24.94",
+		"ramdisk": null,
+		"region": "us-east-1",
+		"root_device_name": "/dev/sda1",
+		"root_device_type": "ebs",
+		"state": "running",
+		"state_code": 16,
+		"tags": {
+		    "datanodes": "True",
+		    "frontendnodes": "False",
+		    "hadoopnodes": "True",
+		    "historyservernodes": "False",
+		    "journalnodes": "True",
+		    "namenodes": "True",
+		    "resourcemanagernodes": "True",
+		    "zookeepernodes": "True"
+		},
+		"tenancy": "default",
+		"virtualization_type": "hvm"
+	    },
+	    {
+		"ami_launch_index": "1",
+		"architecture": "x86_64",
+		"block_device_mapping": {
+		    "/dev/sda1": {
+			"delete_on_termination": true,
+			"status": "attached",
+			"volume_id": "vol-c4960d45"
+		    }
+		},
+		"dns_name": "",
+		"ebs_optimized": false,
+		"groups": {
+		    "sg-115b376b": "bds_secgroup",
+		    "sg-69ebc60c": "default"
+		},
+		"hypervisor": "xen",
+		"id": "i-8306407b",
+		"image_id": "ami-2d39803a",
+		"instance_type": "t2.micro",
+		"kernel": null,
+		"key_name": "albert",
+		"launch_time": "2016-09-17T03:14:11.000Z",
+		"placement": "us-east-1a",
+		"private_dns_name": "ip-172-30-3-88.ec2.internal",
+		"private_ip": "172.30.3.88",
+		"public_dns_name": "",
+		"public_ip": "54.175.124.32",
+		"ramdisk": null,
+		"region": "us-east-1",
+		"root_device_name": "/dev/sda1",
+		"root_device_type": "ebs",
+		"state": "running",
+		"state_code": 16,
+		"tags": {
+		    "datanodes": "True",
+		    "frontendnodes": "False",
+		    "hadoopnodes": "True",
+		    "historyservernodes": "False",
+		    "journalnodes": "True",
+		    "namenodes": "True",
+		    "resourcemanagernodes": "True",
+		    "zookeepernodes": "True"
+		},
+		"tenancy": "default",
+		"virtualization_type": "hvm"
 	    }
-	}
+	],
+	"tagged_instances": [
+	    {
+		"ami_launch_index": "0",
+		"architecture": "x86_64",
+		"block_device_mapping": {
+		    "/dev/sda1": {
+			"delete_on_termination": true,
+			"status": "attached",
+			"volume_id": "vol-71970cf0"
+		    }
+		},
+		"dns_name": "",
+		"ebs_optimized": false,
+		"groups": {
+		    "sg-115b376b": "bds_secgroup",
+		    "sg-69ebc60c": "default"
+		},
+		"hypervisor": "xen",
+		"id": "i-8c064074",
+		"image_id": "ami-2d39803a",
+		"instance_type": "t2.micro",
+		"kernel": null,
+		"key_name": "albert",
+		"launch_time": "2016-09-17T03:14:11.000Z",
+		"placement": "us-east-1a",
+		"private_dns_name": "ip-172-30-3-89.ec2.internal",
+		"private_ip": "172.30.3.89",
+		"public_dns_name": "",
+		"public_ip": "54.159.24.94",
+		"ramdisk": null,
+		"region": "us-east-1",
+		"root_device_name": "/dev/sda1",
+		"root_device_type": "ebs",
+		"state": "running",
+		"state_code": 16,
+		"tags": {
+		    "datanodes": "True",
+		    "frontendnodes": "False",
+		    "hadoopnodes": "True",
+		    "historyservernodes": "False",
+		    "journalnodes": "True",
+		    "namenodes": "True",
+		    "resourcemanagernodes": "True",
+		    "zookeepernodes": "True"
+		},
+		"tenancy": "default",
+		"virtualization_type": "hvm"
+	    },
+	    {
+		"ami_launch_index": "1",
+		"architecture": "x86_64",
+		"block_device_mapping": {
+		    "/dev/sda1": {
+			"delete_on_termination": true,
+			"status": "attached",
+			"volume_id": "vol-c4960d45"
+		    }
+		},
+		"dns_name": "",
+		"ebs_optimized": false,
+		"groups": {
+		    "sg-115b376b": "bds_secgroup",
+		    "sg-69ebc60c": "default"
+		},
+		"hypervisor": "xen",
+		"id": "i-8306407b",
+		"image_id": "ami-2d39803a",
+		"instance_type": "t2.micro",
+		"kernel": null,
+		"key_name": "albert",
+		"launch_time": "2016-09-17T03:14:11.000Z",
+		"placement": "us-east-1a",
+		"private_dns_name": "ip-172-30-3-88.ec2.internal",
+		"private_ip": "172.30.3.88",
+		"public_dns_name": "",
+		"public_ip": "54.175.124.32",
+		"ramdisk": null,
+		"region": "us-east-1",
+		"root_device_name": "/dev/sda1",
+		"root_device_type": "ebs",
+		"state": "running",
+		"state_code": 16,
+		"tags": {
+		    "datanodes": "True",
+		    "frontendnodes": "False",
+		    "hadoopnodes": "True",
+		    "historyservernodes": "False",
+		    "journalnodes": "True",
+		    "namenodes": "True",
+		    "resourcemanagernodes": "True",
+		    "zookeepernodes": "True"
+		},
+		"tenancy": "default",
+		"virtualization_type": "hvm"
+	    }
+	]
+    },
+    "changed": false,
+    "invocation": {
+	"module_args": {
+	    "file": "/tmp/a.yml"
+	},
+	"module_name": "include_vars"
+    }
+}
 
