@@ -39,7 +39,7 @@
 	"ec2_root_device_name": "/dev/sda1",
 	"ec2_root_device_type": "ebs",
 	"ec2_security_group_ids": "sg-69ebc60c,sg-115b376b",
-	"ec2_security_group_names": "default,bds_secgroup",
+	"ec2_security_group_names": "default,abds_secgroup",
 	"ec2_sourceDestCheck": "true",
 	"ec2_spot_instance_request_id": "",
 	"ec2_state": "running",
@@ -71,7 +71,7 @@
   "key_albert": [
     "54.85.130.171"
   ],
-  "security_group_bds_secgroup": [
+  "security_group_abds_secgroup": [
     "54.85.130.171"
   ],
   "security_group_default": [

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# EC2 for BDS documentation build configuration file, created by
+# EC2 for ABDS documentation build configuration file, created by
 # sphinx-quickstart on Fri Sep 16 00:52:49 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'EC2 for BDS'
+project = u'EC2 for ABDS'
 copyright = u'2016, Hyungro Lee'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -176,7 +176,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'EC2forBDSdoc'
+htmlhelp_basename = 'EC2forABDSdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -196,7 +196,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'EC2forBDS.tex', u'EC2 for BDS Documentation',
+  ('index', 'EC2forABDS.tex', u'EC2 for ABDS Documentation',
    u'Hyungro Lee', 'manual'),
 ]
 
@@ -226,7 +226,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ec2forbds', u'EC2 for BDS Documentation',
+    ('index', 'ec2forabds', u'EC2 for ABDS Documentation',
      [u'Hyungro Lee'], 1)
 ]
 
@@ -240,8 +240,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'EC2forBDS', u'EC2 for BDS Documentation',
-   u'Hyungro Lee', 'EC2forBDS', 'One line description of project.',
+  ('index', 'EC2forABDS', u'EC2 for ABDS Documentation',
+   u'Hyungro Lee', 'EC2forABDS', 'One line description of project.',
    'Miscellaneous'),
 ]
 

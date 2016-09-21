@@ -85,17 +85,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/EC2forBDS.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/EC2forABDS.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/EC2forBDS.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/EC2forABDS.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/EC2forBDS"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/EC2forBDS"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/EC2forABDS"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/EC2forABDS"
 	@echo "# devhelp"
 
 epub:

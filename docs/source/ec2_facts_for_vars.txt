@@ -18,7 +18,7 @@
 		"dns_name": "",
 		"ebs_optimized": false,
 		"groups": {
-		    "sg-115b376b": "bds_secgroup",
+		    "sg-115b376b": "abds_secgroup",
 		    "sg-69ebc60c": "default"
 		},
 		"hypervisor": "xen",
@@ -65,7 +65,7 @@
 		"dns_name": "",
 		"ebs_optimized": false,
 		"groups": {
-		    "sg-115b376b": "bds_secgroup",
+		    "sg-115b376b": "abds_secgroup",
 		    "sg-69ebc60c": "default"
 		},
 		"hypervisor": "xen",
@@ -114,7 +114,7 @@
 		"dns_name": "",
 		"ebs_optimized": false,
 		"groups": {
-		    "sg-115b376b": "bds_secgroup",
+		    "sg-115b376b": "abds_secgroup",
 		    "sg-69ebc60c": "default"
 		},
 		"hypervisor": "xen",
@@ -161,7 +161,7 @@
 		"dns_name": "",
 		"ebs_optimized": false,
 		"groups": {
-		    "sg-115b376b": "bds_secgroup",
+		    "sg-115b376b": "abds_secgroup",
 		    "sg-69ebc60c": "default"
 		},
 		"hypervisor": "xen",
