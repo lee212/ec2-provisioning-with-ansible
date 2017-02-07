@@ -131,8 +131,8 @@ BigData Stack requires.
 site.yml with Include
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Three Ansible playbooks are provided to deploy ABDS on ec2.
+Three Ansible playbooks are provided to deploy virtual clusters on Amazon EC2.
 
 - boot.yml: to start EC2 instances
 - convert.yml: to provide inventory groups from dynamic inventory of ec2.
-- example-project-nist-fingerprint-matching.yml: to run ABDS playbooks
+- example-project-nist-fingerprint-matching.yml: to run SDS playbooks
