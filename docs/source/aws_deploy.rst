@@ -6,10 +6,11 @@ Basic Issues
 - '{{secgroup.name}}' doesn't work even though it is defined from http://docs.ansible.com/ansible/ec2_group_module.html
   Did I something wrong? 
 - group_id works!::
+
   31             group_id: "{{secgroup_first.group_id}}"
 
 
- VPC & Subnet
+VPC & Subnet
 -------------------------------------------------------------------------------
 
 - manually added from portal website for those
@@ -29,6 +30,7 @@ Performance Measurement
 Time lapse can be measured by callback functions defined in ``ansible.cfg`` 
 
 ::
+
   [defaults]
   callback_whitelist = profile_tasks
 
