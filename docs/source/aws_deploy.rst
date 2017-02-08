@@ -7,7 +7,7 @@ Basic Issues
   Did I something wrong? 
 - group_id works!::
 
-  31             group_id: "{{secgroup_first.group_id}}"
+    31             group_id: "{{secgroup_first.group_id}}"
 
 
 VPC & Subnet
