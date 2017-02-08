@@ -110,7 +110,7 @@ looks like:
 For more information, see Ansible Dynamic Inventory `here
 <http://docs.ansible.com/ansible/intro_dynamic_inventory.html>`_
 
-Launching EC2 Instances via Ansible ``ec2` module
+Launching EC2 Instances via Ansible ``ec2`` module
 -------------------------------------------------------------------------------
 
 Ansible provide cloud modules to manage instances and we use ``ec2`` module for
